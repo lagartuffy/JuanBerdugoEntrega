@@ -27,13 +27,13 @@ public class Pantalla2Activity extends AppCompatActivity {
         enviarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Obtener los datos ingresados
+
                 String angulo = anguloEditText.getText().toString();
                 String lado1 = lado1EditText.getText().toString();
                 String lado2 = lado2EditText.getText().toString();
                 String lado3 = lado3EditText.getText().toString();
 
-                // Pasar los datos a la Pantalla3Activity
+
                 Intent intent = new Intent(Pantalla2Activity.this, Pantalla3Activity.class);
                 intent.putExtra("angulo", angulo);
                 intent.putExtra("lado1", lado1);
